@@ -1,3 +1,46 @@
-.hello {
-    color: rgb(72, 0, 255);
+@font-face {
+    font-family: 'Helvetica';
+    font-family: 'Inter';
+    src: url('./Helvetica.woff/Helvetica.otf') format('otf'), url('./Inter/Inter-Regular.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
 }
+
+
+:root{
+    --clr-blackest: #1e1e1e;
+    --clr-blacker: #1d1d1d;
+    --clr-black: #282828;
+    --clr-yellow: #e2b93b;
+    --clr-white: #fff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.Helvetica{
+    font-family: 'Helvetica';
+}
+
+.Inter{
+    font-family: 'Inter';
+}
+
+.text-white{
+    color: var(--clr-white);
+}
+
+.text-yellow{
+    color: var(--clr-yellow);
+}
+
+.full-width{
+    width: 100%;
+}
+
+.container{
+    margin-inline: 1rem;
+}
+

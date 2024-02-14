@@ -1,19 +1,12 @@
-import _ from 'lodash';
 import './style.css';
-import Icon from './webpack-icon.png';
+import bgImage from './images/hero-bg-min.jpg';
 
-function component() {
-    const element = document.createElement('div');
-
-   // Lodash, now imported by this script
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    element.classList.add('hello');
-
-    const myIcon = new Image();
-    myIcon.src = Icon;
-    element.appendChild(myIcon);
-
-    return element;
+function heroBackground() {
+  const background = new Image();
+  background.src = bgImage;
+  const bgHero = document.querySelector('.hero');
+  bgHero.appendChild(background);
+  return bgHero;
 }
 
-    document.body.appendChild(component());
+heroBackground();
