@@ -13,9 +13,12 @@ module.exports = {
     }),
   ],
   output: {
-    filename: 'bundle.js',
+    filename: ' filename: [name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
+  },
+  optimization: {
+    runtimeChunk: 'single',
   },
   module: {
     rules: [
@@ -28,8 +31,11 @@ module.exports = {
         type: 'asset/resource',
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: 'asset/resource',
+        test: /\.(woff(2)?|eot|ttf|otf|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        type: 'asset/resource', // webpack 5
+        generator: {
+          filename: 'fonts/[name][ext][query]',
+        },
       },
     ],
   },

@@ -3,16 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
+    <title>Foodtuck</title>
 </head>
 <body>
     <main id="app">
-        <div>
-            <div class="hero">
-                <h1 class="Helvetica text-yellow">The quick brown fox died!</h1>
-                <p class="Inter">It died because of hunger</p>
+            <div class="hero top-0 relative">
+                <div class="overlay absolute"></div>
+                <div class="flex">
+                    <h1 class="text-center absolute pt-5"><span class="text-white">Food</span><span class="text-orange">tuck</span></h1>
+                </div>
+                <div class="absolute pt-5 text-white">
+                    <div>
+                        <nav id="navigation">
+                            <ul>
+                                <li class="navlist active">Home</li>
+                                <li class="navlist">Menu</li>
+                                <li class="navlist">Blog</li>
+                                <li class="navlist">Pages</li>
+                                <li class="navlist">
+                                    <i class="fas fa-arrow-down-long"></i>
+                                    About
+                                </li>
+                                <li class="navlist">Shop</li>
+                                <li class="navlist">Contact</li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="search">
+                        <div>
+                            <div class="search-input"></div>
+                            <div class="cart"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
     </main>
 </body>
 </html>
