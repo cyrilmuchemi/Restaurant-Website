@@ -131,4 +131,9 @@
     list-style: none;
     padding: 15px;
     cursor: pointer;
+    padding-top: 2rem;
+}
+
+.hero-content{
+    margin-top: 170px;
 }
