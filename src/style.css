@@ -81,6 +81,14 @@
     padding-top: 1.5rem;
 }
 
+.font-42{
+    font-size: 42px;
+}
+
+.font-22{
+    font-size: 22px;
+}
+
 .search-bar{
     width: 100%;
     max-width: 400px;
@@ -136,4 +144,36 @@
 
 .hero-content{
     margin-top: 170px;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.socials-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.socials-list li{
+    cursor: pointer;
+}
+
+.socials-list li :hover{
+    color: var(--clr-orange);
+}
+
+.hero-button-button{
+    background: var(--clr-orange);
+    border-radius: 50px;
+    color: var(--clr-white);
+    border: none;
+    width: 190px;
+    height: 60px;
+    font-size: 16px;
+    cursor: pointer;
 }

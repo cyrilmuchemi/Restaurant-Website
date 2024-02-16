@@ -3,6 +3,7 @@ import './style.css';
 import bgImage from './images/hero-bg-min.jpg';
 import topLine from './images/line-top.png';
 import bottomLine from './images/line-bottom.png';
+import quick from './images/quick-amusing.png';
 import '@fortawesome/fontawesome-free/css/all.css';
 
 class Background {
@@ -29,8 +30,17 @@ class Background {
     line2.appendChild(secondLine);
     return line2;
   }
+
+  static heroTextImage() {
+    const quickBox = document.querySelector('.stylistic-heading');
+    const quickImage = new Image();
+    quickImage.src = quick;
+    quickBox.appendChild(quickImage);
+    return quickBox;
+  }
 }
 
 Background.heroBackground();
 Background.heroContent1();
 Background.heroContent2();
+Background.heroTextImage();
