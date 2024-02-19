@@ -4,6 +4,7 @@ import bgImage from './images/hero-bg-min.jpg';
 import topLine from './images/line-top.png';
 import bottomLine from './images/line-bottom.png';
 import quick from './images/quick-amusing.png';
+import food from './images/hero-food.png';
 import '@fortawesome/fontawesome-free/css/all.css';
 
 class Background {
@@ -38,9 +39,18 @@ class Background {
     quickBox.appendChild(quickImage);
     return quickBox;
   }
+
+  static heroFood() {
+    const foodDiv = document.querySelector('.hero-image');
+    const foodImage = new Image();
+    foodImage.src = food;
+    foodDiv.appendChild(foodImage);
+    return foodDiv;
+  }
 }
 
 Background.heroBackground();
 Background.heroContent1();
 Background.heroContent2();
 Background.heroTextImage();
+Background.heroFood();

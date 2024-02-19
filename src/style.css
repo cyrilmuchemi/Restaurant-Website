@@ -120,6 +120,15 @@
     background: none;
 }
 
+.hero {
+    width: 100%;
+    max-width: 1920px;
+    max-height: 950px;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;    
+}
+
 .hero-navigation{
     display: flex;
     padding: 10px 50px;
@@ -148,6 +157,7 @@
 
 .social-icons{
     display: flex;
+    padding-left: 1rem;
     flex-direction: column;
     gap: 35px;
 }
@@ -176,4 +186,15 @@
     height: 60px;
     font-size: 16px;
     cursor: pointer;
+}
+
+.hero-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.background{
+    background-position: center;
+    background-repeat: no-repeat;
 }
