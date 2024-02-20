@@ -6,6 +6,8 @@ import bottomLine from './images/line-bottom.png';
 import quick from './images/quick-amusing.png';
 import food from './images/hero-food.png';
 import '@fortawesome/fontawesome-free/css/all.css';
+import check from './images/check.png';
+import aboutImg from './images/About-us.png';
 
 class Background {
   static heroBackground() {
@@ -47,6 +49,24 @@ class Background {
     foodDiv.appendChild(foodImage);
     return foodDiv;
   }
+
+  static checkAppend() {
+    const checkDivs = document.querySelectorAll('.check');
+    checkDivs.forEach((checkDiv) => {
+      const checkImage = new Image();
+      checkImage.src = check;
+      checkDiv.appendChild(checkImage);
+    });
+    return checkDivs;
+  }
+
+  static aboutTextImage() {
+    const aboutHead = document.querySelector('.about-head');
+    const aboutImage = new Image();
+    aboutImage.src = aboutImg;
+    aboutHead.appendChild(aboutImage);
+    return aboutHead;
+  }
 }
 
 Background.heroBackground();
@@ -54,3 +74,5 @@ Background.heroContent1();
 Background.heroContent2();
 Background.heroTextImage();
 Background.heroFood();
+Background.aboutTextImage();
+Background.checkAppend();
