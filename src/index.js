@@ -8,6 +8,9 @@ import food from './images/hero-food.png';
 import '@fortawesome/fontawesome-free/css/all.css';
 import check from './images/check.png';
 import aboutImg from './images/About-us.png';
+import imgTop from './images/img-top.png';
+import bottomLeft from './images/bottom-img-left.png';
+import bottomRight from './images/bottom-img-right.png';
 
 class Background {
   static heroBackground() {
@@ -67,6 +70,30 @@ class Background {
     aboutHead.appendChild(aboutImage);
     return aboutHead;
   }
+
+  static topAboutImg() {
+    const aboutTop = document.querySelector('.about-us-img-top');
+    const topImg = new Image();
+    topImg.src = imgTop;
+    aboutTop.appendChild(topImg);
+    return aboutTop;
+  }
+
+  static bottomLeftImg() {
+    const aboutImgLeft = document.querySelector('.img-bottom-left');
+    const leftImg = new Image();
+    leftImg.src = bottomLeft;
+    aboutImgLeft.appendChild(leftImg);
+    return aboutImgLeft;
+  }
+
+  static bottomRightImg() {
+    const aboutImgRight = document.querySelector('.img-bottom-right');
+    const rightImg = new Image();
+    rightImg.src = bottomRight;
+    aboutImgRight.appendChild(rightImg);
+    return aboutImgRight;
+  }
 }
 
 Background.heroBackground();
@@ -76,3 +103,6 @@ Background.heroTextImage();
 Background.heroFood();
 Background.aboutTextImage();
 Background.checkAppend();
+Background.topAboutImg();
+Background.bottomLeftImg();
+Background.bottomRightImg();

@@ -77,6 +77,10 @@
     display: flex;
 }
 
+.pt-7{
+    padding-top: 3rem;
+}
+
 .pt-5{
     padding-top: 1.5rem;
 }
@@ -198,6 +202,23 @@
     align-items: center;
 }
 
+.about-us-top{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    margin-inline: 1.6rem;
+}
+
 .bg-black{
     background-color: var(--clr-blackest);
+}
+
+.about-p{
+    max-width: 526px;
+}
+
+.about-us-img-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
 }
