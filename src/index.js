@@ -11,6 +11,11 @@ import aboutImg from './images/About-us.png';
 import imgTop from './images/img-top.png';
 import bottomLeft from './images/bottom-img-left.png';
 import bottomRight from './images/bottom-img-right.png';
+import foodCategory from './images/Food Category.png';
+import category1 from './images/category-1.png';
+import category2 from './images/category-2.png';
+import category3 from './images/category-3.png';
+import category4 from './images/category-4.png';
 
 class Background {
   static heroBackground() {
@@ -94,6 +99,46 @@ class Background {
     aboutImgRight.appendChild(rightImg);
     return aboutImgRight;
   }
+
+  static foodCategory() {
+    const foodCategoryBox = document.querySelector('.food-category');
+    const foodCat = new Image();
+    foodCat.src = foodCategory;
+    foodCategoryBox.appendChild(foodCat);
+    return foodCategoryBox;
+  }
+
+  static category1() {
+    const firstCategory = document.querySelector('.category-image-1');
+    const firstImage = new Image();
+    firstImage.src = category1;
+    firstCategory.appendChild(firstImage);
+    return firstCategory;
+  }
+
+  static category2() {
+    const secondCategory = document.querySelector('.category-image-2');
+    const secondImage = new Image();
+    secondImage.src = category2;
+    secondCategory.appendChild(secondImage);
+    return secondCategory;
+  }
+
+  static category3() {
+    const thirdCategory = document.querySelector('.category-image-3');
+    const thirdImage = new Image();
+    thirdImage.src = category3;
+    thirdCategory.appendChild(thirdImage);
+    return thirdCategory;
+  }
+
+  static category4() {
+    const fourthCategory = document.querySelector('.category-image-4');
+    const fourthImage = new Image();
+    fourthImage.src = category4;
+    fourthCategory.appendChild(fourthImage);
+    return fourthCategory;
+  }
 }
 
 Background.heroBackground();
@@ -106,3 +151,8 @@ Background.checkAppend();
 Background.topAboutImg();
 Background.bottomLeftImg();
 Background.bottomRightImg();
+Background.foodCategory();
+Background.category1();
+Background.category2();
+Background.category3();
+Background.category4();
