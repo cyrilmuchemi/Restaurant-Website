@@ -16,6 +16,13 @@ import category1 from './images/category-1.png';
 import category2 from './images/category-2.png';
 import category3 from './images/category-3.png';
 import category4 from './images/category-4.png';
+import topPic1 from './images/top-row-1.png';
+import topPic2 from './images/top-row-2.png';
+import bottomPic1 from './images/bottom-row-1.png';
+import bottomPic2 from './images/bottom-row-2.png';
+import bottomPic3 from './images/bottom-row-3.png';
+import bottomPic4 from './images/bottom-row-4.png';
+import whyChooseUS from './images/Why Choose us.png';
 
 class Background {
   static heroBackground() {
@@ -139,6 +146,62 @@ class Background {
     fourthCategory.appendChild(fourthImage);
     return fourthCategory;
   }
+
+  static topImage1() {
+    const topImg1Box = document.querySelector('.top-row-1');
+    const topImg1 = new Image();
+    topImg1.src = topPic1;
+    topImg1Box.appendChild(topImg1);
+    return topImg1Box;
+  }
+
+  static topImage2() {
+    const topImg2Box = document.querySelector('.top-row-2');
+    const topImg2 = new Image();
+    topImg2.src = topPic2;
+    topImg2Box.appendChild(topImg2);
+    return topImg2Box;
+  }
+
+  static bottomImage1() {
+    const bottomImageBox1 = document.querySelector('.bottom-row-1');
+    const imgBox1 = new Image();
+    imgBox1.src = bottomPic1;
+    bottomImageBox1.appendChild(imgBox1);
+    return bottomImageBox1;
+  }
+
+  static bottomImage2() {
+    const bottomImageBox2 = document.querySelector('.bottom-row-2');
+    const imgBox2 = new Image();
+    imgBox2.src = bottomPic2;
+    bottomImageBox2.appendChild(imgBox2);
+    return bottomImageBox2;
+  }
+
+  static bottomImage3() {
+    const bottomImageBox3 = document.querySelector('.bottom-row-3');
+    const imgBox3 = new Image();
+    imgBox3.src = bottomPic3;
+    bottomImageBox3.appendChild(imgBox3);
+    return bottomImageBox3;
+  }
+
+  static bottomImage4() {
+    const bottomImageBox4 = document.querySelector('.bottom-row-4');
+    const imgBox4 = new Image();
+    imgBox4.src = bottomPic4;
+    bottomImageBox4.appendChild(imgBox4);
+    return bottomImageBox4;
+  }
+
+  static whyChooseUS() {
+    const whyChooseUSBox = document.querySelector('.why-choose-us');
+    const chooseImg = new Image();
+    chooseImg.src = whyChooseUS;
+    whyChooseUSBox.appendChild(chooseImg);
+    return whyChooseUSBox;
+  }
 }
 
 Background.heroBackground();
@@ -156,3 +219,10 @@ Background.category1();
 Background.category2();
 Background.category3();
 Background.category4();
+Background.topImage1();
+Background.topImage2();
+Background.bottomImage1();
+Background.bottomImage2();
+Background.bottomImage3();
+Background.bottomImage4();
+Background.whyChooseUS();
