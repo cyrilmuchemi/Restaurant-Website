@@ -202,6 +202,12 @@
     align-items: center;
 }
 
+.about-us{
+    background-image: url("./images/leaf-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
 .about-us-top{
     display: flex;
     justify-content: space-between;
@@ -278,4 +284,51 @@
     display: flex;
     flex-direction: column;
     gap: 7px;
+}
+
+.category-icons{
+    display: flex;
+    gap: 15px;
+}
+
+.category-icon-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-icon-box > span {
+    padding-top: 10px;
+}
+
+.category-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-button{
+    max-width: 374px;
+    height: 93px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    align-items: center;
+    background-color: var(--clr-white);
+    border-radius: 8px;
+}
+
+.category-button > span{
+    color: var(--clr-orange);
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.category-button > p{
+    color: black;
+}
+
+.experience{
+    font-weight: 900;
 }

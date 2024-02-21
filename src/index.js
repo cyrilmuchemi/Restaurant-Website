@@ -23,6 +23,9 @@ import bottomPic2 from './images/bottom-row-2.png';
 import bottomPic3 from './images/bottom-row-3.png';
 import bottomPic4 from './images/bottom-row-4.png';
 import whyChooseUS from './images/Why Choose us.png';
+import hamburger from './images/Hamburger.png';
+import cookie from './images/Cookie.png';
+import wine from './images/Wine.png';
 
 class Background {
   static heroBackground() {
@@ -202,6 +205,30 @@ class Background {
     whyChooseUSBox.appendChild(chooseImg);
     return whyChooseUSBox;
   }
+
+  static hamburger() {
+    const fastFood = document.querySelector('.fast-food');
+    const fastFoodImg = new Image();
+    fastFoodImg.src = hamburger;
+    fastFood.appendChild(fastFoodImg);
+    return fastFood;
+  }
+
+  static cookie() {
+    const lunch = document.querySelector('.lunch');
+    const cookieImg = new Image();
+    cookieImg.src = cookie;
+    lunch.appendChild(cookieImg);
+    return lunch;
+  }
+
+  static wine() {
+    const wineBox = document.querySelector('.dinner');
+    const wineImg = new Image();
+    wineImg.src = wine;
+    wineBox.appendChild(wineImg);
+    return wineBox;
+  }
 }
 
 Background.heroBackground();
@@ -226,3 +253,6 @@ Background.bottomImage2();
 Background.bottomImage3();
 Background.bottomImage4();
 Background.whyChooseUS();
+Background.hamburger();
+Background.cookie();
+Background.wine();
