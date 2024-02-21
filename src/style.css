@@ -332,3 +332,34 @@
 .experience{
     font-weight: 900;
 }
+
+.about-feature-bg{
+    padding-top: 100px;
+}
+
+.about-feature-bg-image{
+    background: url('./images/down-bg.png');
+    background-repeat: no-repeat;
+    height: 469px;
+    max-height: 1920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-feature-images-box{
+    display: flex;
+    gap: 80px;
+}
+
+.food-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.number{
+    font-size: 22px;
+    font-weight: bolder;
+}

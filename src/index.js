@@ -26,6 +26,10 @@ import whyChooseUS from './images/Why Choose us.png';
 import hamburger from './images/Hamburger.png';
 import cookie from './images/Cookie.png';
 import wine from './images/Wine.png';
+import chef from './images/chefs.png';
+import foodItems from './images/food-items.png';
+import forks from './images/forks.png';
+import pizza from './images/pizza.png';
 
 class Background {
   static heroBackground() {
@@ -229,6 +233,38 @@ class Background {
     wineBox.appendChild(wineImg);
     return wineBox;
   }
+
+  static chefs() {
+    const chefBox = document.querySelector('.professional-chefs');
+    const chefImg = new Image();
+    chefImg.src = chef;
+    chefBox.appendChild(chefImg);
+    return chefBox;
+  }
+
+  static foodItems() {
+    const foodItemBox = document.querySelector('.items-of-food');
+    const foodItemImg = new Image();
+    foodItemImg.src = foodItems;
+    foodItemBox.appendChild(foodItemImg);
+    return foodItemBox;
+  }
+
+  static experience() {
+    const experienceBox = document.querySelector('.years-of-experience');
+    const experienceImg = new Image();
+    experienceImg.src = forks;
+    experienceBox.appendChild(experienceImg);
+    return experienceBox;
+  }
+
+  static customer() {
+    const customerBox = document.querySelector('.happy-customers');
+    const pizzaImage = new Image();
+    pizzaImage.src = pizza;
+    customerBox.appendChild(pizzaImage);
+    return customerBox;
+  }
 }
 
 Background.heroBackground();
@@ -256,3 +292,7 @@ Background.whyChooseUS();
 Background.hamburger();
 Background.cookie();
 Background.wine();
+Background.chefs();
+Background.foodItems();
+Background.experience();
+Background.customer();
