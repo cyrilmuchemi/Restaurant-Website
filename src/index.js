@@ -30,6 +30,9 @@ import chef from './images/chefs.png';
 import foodItems from './images/food-items.png';
 import forks from './images/forks.png';
 import pizza from './images/pizza.png';
+import menuHeading from './images/Choose & pick.png';
+import menuLeaf from './images/menu-leaf.png';
+import menuPlate from './images/menu-plata.png';
 
 class Background {
   static heroBackground() {
@@ -265,6 +268,30 @@ class Background {
     customerBox.appendChild(pizzaImage);
     return customerBox;
   }
+
+  static menuHeader() {
+    const menuHeadBox = document.querySelector('.menu-header');
+    const menuImage = new Image();
+    menuImage.src = menuHeading;
+    menuHeadBox.appendChild(menuImage);
+    return menuHeadBox;
+  }
+
+  static menuLeaf() {
+    const menuLeafBox = document.getElementById('menu-leaf');
+    const leafImage = new Image();
+    leafImage.src = menuLeaf;
+    menuLeafBox.appendChild(leafImage);
+    return menuLeafBox;
+  }
+
+  static menuPlate() {
+    const menuPlateBox = document.getElementById('menu-plate');
+    const plateImage = new Image();
+    plateImage.src = menuPlate;
+    menuPlateBox.appendChild(plateImage);
+    return menuPlateBox;
+  }
 }
 
 Background.heroBackground();
@@ -296,3 +323,6 @@ Background.chefs();
 Background.foodItems();
 Background.experience();
 Background.customer();
+Background.menuHeader();
+Background.menuLeaf();
+Background.menuPlate();

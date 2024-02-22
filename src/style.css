@@ -97,6 +97,10 @@
     font-size: 22px;
 }
 
+.list-none{
+    list-style: none;
+}
+
 .search-bar{
     width: 100%;
     max-width: 400px;
@@ -362,4 +366,45 @@
 .number{
     font-size: 22px;
     font-weight: bolder;
+}
+
+.flow-hidden{
+    overflow: hidden;
+}
+
+.menu-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-navigation{
+    display: flex;
+    gap: 80px;
+    font-size: 22px;
+    padding-top: 25px;
+    cursor: pointer;
+}
+
+.active{
+    color: var(--clr-orange);
+}
+
+#menu-leaf{
+    position: relative;
+}
+
+#menu-plate{
+    position: absolute;
+    padding-left: 70px;
+}
+
+.menu-container{
+    display: flex;
+    margin-top: 50px;
+    color: var(--clr-white);
+}
+
+.menu-list{
+    display: flex;
 }
