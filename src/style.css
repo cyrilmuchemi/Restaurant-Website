@@ -381,7 +381,7 @@
 .menu-navigation{
     display: flex;
     gap: 80px;
-    font-size: 22px;
+    font-size: 18px;
     padding-top: 25px;
     cursor: pointer;
 }
@@ -401,10 +401,24 @@
 
 .menu-container{
     display: flex;
-    margin-top: 50px;
+    margin-top: 70px;
+    width: 80%;
     color: var(--clr-white);
 }
 
 .menu-list{
     display: flex;
+    gap: 45px;
+}
+
+.food{
+    display: flex;
+    gap: 10px;
+    padding-top: 25px;
+}
+
+.food-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }

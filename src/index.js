@@ -33,6 +33,14 @@ import pizza from './images/pizza.png';
 import menuHeading from './images/Choose & pick.png';
 import menuLeaf from './images/menu-leaf.png';
 import menuPlate from './images/menu-plata.png';
+import food0 from './images/food-0.png';
+import food1 from './images/food-1.png';
+import food2 from './images/food-2.png';
+import food3 from './images/food-3.png';
+import food4 from './images/food-4.png';
+import food5 from './images/food-5.png';
+import food6 from './images/food-6.png';
+import food7 from './images/food-7.png';
 
 class Background {
   static heroBackground() {
@@ -292,6 +300,70 @@ class Background {
     menuPlateBox.appendChild(plateImage);
     return menuPlateBox;
   }
+
+  static menuItem1() {
+    const foodBox = document.querySelector('.food-image-0');
+    const foodImage = new Image();
+    foodImage.src = food0;
+    foodBox.appendChild(foodImage);
+    return foodBox;
+  }
+
+  static menuItem2() {
+    const foodBox = document.querySelector('.food-image-1');
+    const foodImage = new Image();
+    foodImage.src = food1;
+    foodBox.appendChild(foodImage);
+    return foodBox;
+  }
+
+  static menuItem3() {
+    const foodBox = document.querySelector('.food-image-2');
+    const foodImage = new Image();
+    foodImage.src = food2;
+    foodBox.appendChild(foodImage);
+    return foodBox;
+  }
+
+  static menuItem4() {
+    const foodBox = document.querySelector('.food-image-3');
+    const foodImage = new Image();
+    foodImage.src = food3;
+    foodBox.appendChild(foodImage);
+    return foodBox;
+  }
+
+  static menuItem5() {
+    const foodBox = document.querySelector('.food-image-4');
+    const foodImage = new Image();
+    foodImage.src = food4;
+    foodBox.appendChild(foodImage);
+    return foodBox;
+  }
+
+  static menuItem6() {
+    const foodBox = document.querySelector('.food-image-5');
+    const foodImage = new Image();
+    foodImage.src = food5;
+    foodBox.appendChild(foodImage);
+    return foodBox;
+  }
+
+  static menuItem7() {
+    const foodBox = document.querySelector('.food-image-6');
+    const foodImage = new Image();
+    foodImage.src = food6;
+    foodBox.appendChild(foodImage);
+    return foodBox;
+  }
+
+  static menuItem8() {
+    const foodBox = document.querySelector('.food-image-7');
+    const foodImage = new Image();
+    foodImage.src = food7;
+    foodBox.appendChild(foodImage);
+    return foodBox;
+  }
 }
 
 Background.heroBackground();
@@ -326,3 +398,11 @@ Background.customer();
 Background.menuHeader();
 Background.menuLeaf();
 Background.menuPlate();
+Background.menuItem1();
+Background.menuItem2();
+Background.menuItem3();
+Background.menuItem4();
+Background.menuItem5();
+Background.menuItem6();
+Background.menuItem7();
+Background.menuItem8();
