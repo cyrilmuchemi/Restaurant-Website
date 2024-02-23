@@ -46,6 +46,9 @@ import chef1 from './images/Chef-1.png';
 import chef2 from './images/Chef-2.png';
 import chef3 from './images/Chef-3.png';
 import chef4 from './images/Chef-4.png';
+import testimonials from './images/Testimonials.png';
+import clientImage from './images/client-image.png';
+import clientQuotes from './images/Quotes.png';
 
 class Background {
   static heroBackground() {
@@ -409,6 +412,30 @@ class Background {
     chefBox.appendChild(chefImage);
     return chefBox;
   }
+
+  static testimonial() {
+    const headingBox = document.querySelector('.testimonial-image');
+    const testimonyHead = new Image();
+    testimonyHead.src = testimonials;
+    headingBox.appendChild(testimonyHead);
+    return headingBox;
+  }
+
+  static clientBox() {
+    const clientBox = document.querySelector('.client-image');
+    const clientImg = new Image();
+    clientImg.src = clientImage;
+    clientBox.appendChild(clientImg);
+    return clientBox;
+  }
+
+  static quotes() {
+    const clientBox = document.querySelector('.client-quotes');
+    const clientImg = new Image();
+    clientImg.src = clientQuotes;
+    clientBox.appendChild(clientImg);
+    return clientBox;
+  }
 }
 
 Background.heroBackground();
@@ -456,3 +483,6 @@ Background.chef1();
 Background.chef2();
 Background.chef3();
 Background.chef4();
+Background.testimonial();
+Background.clientBox();
+Background.quotes();

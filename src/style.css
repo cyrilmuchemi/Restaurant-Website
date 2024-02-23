@@ -441,8 +441,16 @@
     gap: 15px;
 }
 
+.font-32{
+    font-size: 32px;
+}
+
 .pt-7{
     padding-top: 50px;
+}
+
+.pt-3{
+    padding-top: 15px;
 }
 
 .chef-pic{
@@ -458,4 +466,54 @@
     background: none;
     color: var(--clr-white);
     cursor: pointer;
+}
+
+.testimonialss{
+    padding-top: 80px;
+}
+
+.testimonials-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.testimonial-heading{
+    position: absolute;
+    left: 0;
+    margin-left: 180px;
+}
+
+.testimonial-container{
+    background-color: var(--clr-white);
+    width: 66%;
+    color: var(--clr-black);
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.client-image{
+    margin-top: -60px;
+}
+
+.testimonial-container > p {
+    max-width: 696px;
+}
+
+.bg-orange {
+    background: var(--clr-orange);
+}
+
+.client-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.client-details > h3 {
+    font-size: 22px;
 }
