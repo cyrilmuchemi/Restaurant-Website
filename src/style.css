@@ -422,3 +422,40 @@
     flex-direction: column;
     gap: 10px;
 }
+
+.chef{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('./images/chef-bg.png');
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: bottom;
+}
+
+.chef-images-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+    gap: 15px;
+}
+
+.pt-7{
+    padding-top: 50px;
+}
+
+.chef-pic{
+    max-width: 312px;
+}
+
+.chef-btn{
+    width: 155px;
+    height: 50px;
+    border: 2px solid var(--clr-orange);
+    border-radius: 30px;
+    font-size: 14px;
+    background: none;
+    color: var(--clr-white);
+    cursor: pointer;
+}

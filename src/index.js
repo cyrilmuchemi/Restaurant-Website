@@ -41,6 +41,11 @@ import food4 from './images/food-4.png';
 import food5 from './images/food-5.png';
 import food6 from './images/food-6.png';
 import food7 from './images/food-7.png';
+import chefTitle from './images/chefs-title.png';
+import chef1 from './images/Chef-1.png';
+import chef2 from './images/Chef-2.png';
+import chef3 from './images/Chef-3.png';
+import chef4 from './images/Chef-4.png';
 
 class Background {
   static heroBackground() {
@@ -364,6 +369,46 @@ class Background {
     foodBox.appendChild(foodImage);
     return foodBox;
   }
+
+  static chefTitle() {
+    const chefTitleBox = document.querySelector('.chef-heading');
+    const titleImage = new Image();
+    titleImage.src = chefTitle;
+    chefTitleBox.appendChild(titleImage);
+    return chefTitleBox;
+  }
+
+  static chef1() {
+    const chefBox = document.querySelector('.chef-image-1');
+    const chefImage = new Image();
+    chefImage.src = chef1;
+    chefBox.appendChild(chefImage);
+    return chefBox;
+  }
+
+  static chef2() {
+    const chefBox = document.querySelector('.chef-image-2');
+    const chefImage = new Image();
+    chefImage.src = chef2;
+    chefBox.appendChild(chefImage);
+    return chefBox;
+  }
+
+  static chef3() {
+    const chefBox = document.querySelector('.chef-image-3');
+    const chefImage = new Image();
+    chefImage.src = chef3;
+    chefBox.appendChild(chefImage);
+    return chefBox;
+  }
+
+  static chef4() {
+    const chefBox = document.querySelector('.chef-image-4');
+    const chefImage = new Image();
+    chefImage.src = chef4;
+    chefBox.appendChild(chefImage);
+    return chefBox;
+  }
 }
 
 Background.heroBackground();
@@ -406,3 +451,8 @@ Background.menuItem5();
 Background.menuItem6();
 Background.menuItem7();
 Background.menuItem8();
+Background.chefTitle();
+Background.chef1();
+Background.chef2();
+Background.chef3();
+Background.chef4();
