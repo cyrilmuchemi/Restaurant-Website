@@ -51,6 +51,8 @@ import clientImage from './images/client-image.png';
 import clientQuotes from './images/Quotes.png';
 import starFill from './images/star.png';
 import starEmpty from './images/star-empty.png';
+import bannerTitle from './images/Restaurant Active Process.png';
+import playVideo from './images/Play.png';
 
 class Background {
   static heroBackground() {
@@ -470,6 +472,22 @@ class Background {
       });
     });
   }
+
+  static bannerTitle() {
+    const bannerBox = document.querySelector('.banner-title');
+    const bannerHead = new Image();
+    bannerHead.src = bannerTitle;
+    bannerBox.appendChild(bannerHead);
+    return bannerBox;
+  }
+
+  static playVideo() {
+    const playBox = document.querySelector('.play-btn');
+    const playImg = new Image();
+    playImg.src = playVideo;
+    playBox.appendChild(playImg);
+    return playBox;
+  }
 }
 
 Background.heroBackground();
@@ -523,3 +541,5 @@ Background.quotes();
 Background.starSolid();
 Background.emptyStar();
 Background.testimonyNav();
+Background.bannerTitle();
+Background.playVideo();

@@ -496,7 +496,8 @@
     background-image: url('./images/testimonial-bg.png');
     background-repeat: no-repeat;
     background-position-x: calc(140%);
-    box-shadow: rgb(239, 241, 242);
+    box-shadow: rgb(239, 241, 242)  0 0 25px;
+    padding-bottom: 20px;
 }
 
 .client-image{
@@ -593,4 +594,46 @@
           }
         }
       }
-    }
+}
+
+.lower-banner{
+    padding-top: 150px;
+    background-image: url('./images/lower-banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 558px;
+}
+
+.banner-header > h2{
+    max-width: 624px;
+}
+
+.banner-header > p{
+    max-width: 651px;
+}
+
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    align-items: end;
+}
+
+.banner-title{
+    margin-right: 134px;
+}
+
+.banner-btns{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    cursor: pointer;
+}
+
+.play-btn{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 12px;
+    font-size: 18px;
+}
