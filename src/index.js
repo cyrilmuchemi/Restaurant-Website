@@ -49,6 +49,8 @@ import chef4 from './images/Chef-4.png';
 import testimonials from './images/Testimonials.png';
 import clientImage from './images/client-image.png';
 import clientQuotes from './images/Quotes.png';
+import starFill from './images/star.png';
+import starEmpty from './images/star-empty.png';
 
 class Background {
   static heroBackground() {
@@ -436,6 +438,38 @@ class Background {
     clientBox.appendChild(clientImg);
     return clientBox;
   }
+
+  static starSolid() {
+    const starBox = document.querySelectorAll('.star-fil');
+    starBox.forEach((box) => {
+      const star = new Image();
+      star.src = starFill;
+      box.appendChild(star);
+    });
+    return starBox;
+  }
+
+  static emptyStar() {
+    const starBox = document.querySelector('.star-empty');
+    const star = new Image();
+    star.src = starEmpty;
+    starBox.appendChild(star);
+    return starBox;
+  }
+
+  static testimonyNav() {
+    const testList = document.querySelectorAll('.testimony-li');
+
+    testList.forEach((list) => {
+      list.addEventListener('click', () => {
+        testList.forEach((item) => {
+          item.classList.remove('active');
+        });
+
+        list.classList.add('active');
+      });
+    });
+  }
 }
 
 Background.heroBackground();
@@ -486,3 +520,6 @@ Background.chef4();
 Background.testimonial();
 Background.clientBox();
 Background.quotes();
+Background.starSolid();
+Background.emptyStar();
+Background.testimonyNav();
