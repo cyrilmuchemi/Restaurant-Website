@@ -53,6 +53,11 @@ import starFill from './images/star.png';
 import starEmpty from './images/star-empty.png';
 import bannerTitle from './images/Restaurant Active Process.png';
 import playVideo from './images/Play.png';
+import blogPost from './images/Blog Post.png';
+import blogIcons from './images/blog-icons.png';
+import blog1 from './images/blog-img-1.png';
+import blog2 from './images/blog-img-2.png';
+import blog3 from './images/blog-img-3.png';
 
 class Background {
   static heroBackground() {
@@ -488,6 +493,48 @@ class Background {
     playBox.appendChild(playImg);
     return playBox;
   }
+
+  static blogTitle() {
+    const blogBox = document.querySelector('.blog-title');
+    const blogHead = new Image();
+    blogHead.src = blogPost;
+    blogBox.appendChild(blogHead);
+    return blogBox;
+  }
+
+  static blogImg1() {
+    const blogImgBox = document.querySelector('.blog-card-image-1');
+    const blogImg = new Image();
+    blogImg.src = blog1;
+    blogImgBox.appendChild(blogImg);
+    return blogImgBox;
+  }
+
+  static blogImg2() {
+    const blogImgBox = document.querySelector('.blog-card-image-2');
+    const blogImg = new Image();
+    blogImg.src = blog2;
+    blogImgBox.appendChild(blogImg);
+    return blogImgBox;
+  }
+
+  static blogImg3() {
+    const blogImgBox = document.querySelector('.blog-card-image-3');
+    const blogImg = new Image();
+    blogImg.src = blog3;
+    blogImgBox.appendChild(blogImg);
+    return blogImgBox;
+  }
+
+  static blogImages() {
+    const iconBoxes = document.querySelectorAll('.blog-icons');
+    iconBoxes.forEach((box) => {
+      const icon = new Image();
+      icon.src = blogIcons;
+      box.appendChild(icon);
+    });
+    return iconBoxes;
+  }
 }
 
 Background.heroBackground();
@@ -543,3 +590,8 @@ Background.emptyStar();
 Background.testimonyNav();
 Background.bannerTitle();
 Background.playVideo();
+Background.blogTitle();
+Background.blogImg1();
+Background.blogImg2();
+Background.blogImg3();
+Background.blogImages();
