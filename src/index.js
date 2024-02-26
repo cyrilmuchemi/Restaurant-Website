@@ -58,6 +58,10 @@ import blogIcons from './images/blog-icons.png';
 import blog1 from './images/blog-img-1.png';
 import blog2 from './images/blog-img-2.png';
 import blog3 from './images/blog-img-3.png';
+import watch from './images/Watch.png';
+import post1 from './images/post-1.png';
+import post2 from './images/post-2.png';
+import post3 from './images/post-3.png';
 
 class Background {
   static heroBackground() {
@@ -535,6 +539,38 @@ class Background {
     });
     return iconBoxes;
   }
+
+  static watchImg() {
+    const ImgBox = document.querySelector('.col-1-img');
+    const colImg = new Image();
+    colImg.src = watch;
+    ImgBox.appendChild(colImg);
+    return ImgBox;
+  }
+
+  static post1() {
+    const ImgBox = document.querySelector('.post-img-1');
+    const postImg = new Image();
+    postImg.src = post1;
+    ImgBox.appendChild(postImg);
+    return ImgBox;
+  }
+
+  static post2() {
+    const ImgBox = document.querySelector('.post-img-2');
+    const postImg = new Image();
+    postImg.src = post2;
+    ImgBox.appendChild(postImg);
+    return ImgBox;
+  }
+
+  static post3() {
+    const ImgBox = document.querySelector('.post-img-3');
+    const postImg = new Image();
+    postImg.src = post3;
+    ImgBox.appendChild(postImg);
+    return ImgBox;
+  }
 }
 
 Background.heroBackground();
@@ -595,3 +631,7 @@ Background.blogImg1();
 Background.blogImg2();
 Background.blogImg3();
 Background.blogImages();
+Background.watchImg();
+Background.post1();
+Background.post2();
+Background.post3();
