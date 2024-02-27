@@ -645,3 +645,8 @@ Background.post1();
 Background.post2();
 Background.post3();
 Background.footerSocials();
+
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('.hero-navigation');
+  header.classList.toggle('sticky', window.scrollY > 0);
+});
