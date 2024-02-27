@@ -62,6 +62,7 @@ import watch from './images/Watch.png';
 import post1 from './images/post-1.png';
 import post2 from './images/post-2.png';
 import post3 from './images/post-3.png';
+import footSocials from './images/Sociali icon.png';
 
 class Background {
   static heroBackground() {
@@ -571,6 +572,14 @@ class Background {
     ImgBox.appendChild(postImg);
     return ImgBox;
   }
+
+  static footerSocials() {
+    const socialBox = document.querySelector('.foot-social');
+    const socialImg = new Image();
+    socialImg.src = footSocials;
+    socialBox.appendChild(socialImg);
+    return socialBox;
+  }
 }
 
 Background.heroBackground();
@@ -635,3 +644,4 @@ Background.watchImg();
 Background.post1();
 Background.post2();
 Background.post3();
+Background.footerSocials();
