@@ -849,6 +849,19 @@ header{
     .social-icons{
         display: none;
     }
+
+    .food-category-image{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 1087px){
+    .about-us-top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media only screen and (max-width: 1015px) {
@@ -865,7 +878,6 @@ header{
     }
 
     .hero-navigation{
-        background-color: var(--clr-blacker);
         margin-top: -5px;
         padding-top: 28px;
         padding-bottom: 10px;
@@ -931,5 +943,23 @@ header{
     .hero-content{
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #navigation {
+        gap: 68px;
+    }
+}
+
+@media only screen and (max-width: 692px) {
+    .about-us-img-top{
+        display: none;
+    }
+
+    .about-us-img-bottom{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
     }
 }
