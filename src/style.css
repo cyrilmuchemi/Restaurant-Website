@@ -394,7 +394,7 @@ header{
 }
 
 .about-feature-bg{
-    padding-top: 100px;
+    padding-top: 40px;
 }
 
 .about-feature-bg-image{
@@ -535,10 +535,6 @@ header{
 
 .pt-3{
     padding-top: 15px;
-}
-
-.chef-pic{
-    max-width: 312px;
 }
 
 .chef-btn{
@@ -690,6 +686,7 @@ header{
 
 .banner-header > h2{
     max-width: 624px;
+    font-size: 42px;
 }
 
 .banner-header > p{
@@ -725,13 +722,22 @@ header{
 .blog-cards{
     display: flex;
     margin-top: 1.8rem;
-    gap: 35px;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.blog-card-content > h3{
+    font-size: 24px;
 }
 
 .blog-wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.blog-wrapper > h2{
+    font-size: 42px;
 }
 
 .blog-card{
@@ -852,6 +858,10 @@ header{
     align-items: center;
 }
 
+.testimonial-container > p{
+    text-align: center;
+}
+
 @media only screen and (max-width: 1374px) {
     .hero-image{
         max-width: 80%;
@@ -875,6 +885,35 @@ header{
         display: flex;
         flex-direction: column;
         gap: 250px;
+    }
+
+    .chef-pic > img{
+        width: 92%;
+    }
+
+    .chef-images-box{
+        margin-inline: 100px;
+    }
+
+    .blog-card-image-1 > img,
+    .blog-card-image-2 > img,
+    .blog-card-image-3 > img{
+        width: 88%;
+    }
+}
+
+@media only screen and (max-width: 1300px){
+    .chef-images-box{
+        margin-inline: 100px;
+        flex-wrap: wrap;
+    }
+
+    .blog-cards{
+        margin-inline: 40px;
+    }
+
+    .blog-card-content > h3{
+        font-size: 16px;
     }
 }
 
@@ -993,6 +1032,22 @@ header{
     }
 }
 
+@media only screen and (max-width: 856px) {
+    .footer-top{
+        margin-inline: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .footer-middle{
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     #navigation {
         gap: 68px;
@@ -1044,6 +1099,16 @@ header{
         flex-direction: column;
         align-items: center;
     }
+
+    .star > img{
+        width: 77%;
+    }
+
+    .blog-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media only screen and (max-width: 692px) {
@@ -1051,10 +1116,32 @@ header{
         display: none;
     }
 
+    .chef-images-box{
+        margin-inline: 0px;
+    }
+
+
     .about-us-img-bottom{
         display: flex;
         flex-direction: column;
         gap: 40px;
+    }
+
+    .banner-title{
+        margin-right: 50px;
+    }
+
+    .banner-header > h2{
+        font-size: 32px;
+        padding-left: 10px;
+    }
+
+    .banner-header > p{
+        text-align: center;
+    }
+
+    .banner-btns{
+        margin-left: 20px;
     }
 
     .category-image-3,
@@ -1068,18 +1155,53 @@ header{
         align-items: center;
     }
 
+    .testimonial-container{
+        width: 77%;
+    }
+
     .category-button{
         width: 250px;
     }
-}
 
-@media only screen and (max-width: 692px) {
     .menu-navigation{
         gap: 20px;
     }
 
     .menu-navigation > li{
         font-size: 14px;
+    }
+
+    .about-feature-bg{
+        padding-top: 20px;
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 97px;
+        padding-bottom: 15px;
+        gap: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .testimonial-container{
+        margin-top: 245px;
+    }
+
+    .testimonial-heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscribe-box{
+        margin-inline: 2rem;
+    }
+
+    .support{
+        margin-inline: 2rem;
     }
 }
 
@@ -1091,6 +1213,27 @@ header{
     .menu-navigation > li{
         font-size: 12px;
     }
+
+    .star > img{
+        width: 66%;
+    }
+
+    .testimonial-container{
+        width: 90%;
+    }
+
+    .blog-wrapper > h2{
+        font-size: 32px;
+    }
+
+    .chef-images-box{
+        margin-inline: 0px;
+    }
+
+    .banner-header > h2{
+        font-size: 28px;
+    }
+
 }
 
 @media only screen and (max-width: 374px) {
